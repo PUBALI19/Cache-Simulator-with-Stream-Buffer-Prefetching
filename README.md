@@ -1,4 +1,4 @@
-One can download these files and do "make clean" and then "make" to compile the files.  
+For compiling these files: "make clean" and then "make".  
 To run these scripts:  
 The simulator accepts exactly 8 command-line arguments in the following order:   
 sim   <BLOCKSIZE> <L1_SIZE>  <L1_ASSOC> <L2_SIZE>  <L2_ASSOC> <PREF_N>  <PREF_M> <trace_file>  
