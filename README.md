@@ -10,6 +10,6 @@ There are a few constraints on the above parameters: BLOCKSIZE is a power of two
 The number of sets is determined by the following equation:  
 #sets = SIZE/(ASSOC X BLOCKSIZE)  
 Replacement policy: CACHE uses the LRU (least-recently-used) replacement policy.  
-Write Policy: CACHE should use the WBWA (write-back + write-allocate) write policy.   
+Write Policy: CACHE uses the WBWA (write-back + write-allocate) write policy.   
 Write-allocate: A write that misses in CACHE will cause a block to be allocated in CACHE. Therefore, both write misses and read misses cause blocks to be allocated in CACHE.   
 Write-back: A write updates the corresponding block in CACHE, making the block dirty. It does not update the next level in the memory hierarchy (next level of cache or memory). If a dirty block is evicted from CACHE, a writeback (i.e., a write of the entire block) will be sent to the next level in the memory hierarchy.  
