@@ -1,5 +1,5 @@
-One can download these files and do "make clean" and then "make" to compile the files.
-To run these scripts:
+One can download these files and do "make clean" and then "make" to compile the files.  
+To run these scripts:  
 The simulator accepts exactly 8 command-line arguments in the following order:   
 sim   <BLOCKSIZE> <L1_SIZE>  <L1_ASSOC> <L2_SIZE>  <L2_ASSOC> <PREF_N>  <PREF_M> <trace_file>  
 - BLOCKSIZE: Positive integer.  Block size in bytes.  (Same block size for all caches in the memory hierarchy.)   
