@@ -1,6 +1,6 @@
 # Cache and Memory Hierarchy Simulator
 
-A flexible, parameterized memory hierarchy and cache design simulator written in [C / C++ / Java] that models Multi-Level Cache Topologies (L1 and L2) augmented with an optional, highly configurable Stream-Buffer Hardware Prefetcher. 
+A flexible, parameterized memory hierarchy and cache design simulator written in [C++] that models Multi-Level Cache Topologies (L1 and L2) augmented with an optional, highly configurable Stream-Buffer Hardware Prefetcher. 
 
 This engine simulates the step-by-step behavior of cache allocations, evictions, hits, misses, and memory traffic tracking using real-world address traces generated from a subset of SPEC 2006, SPEC 2017, and standard microbenchmarks.
 
@@ -66,11 +66,8 @@ The simulator reads text traces logging real-time processor memory references. A
 r ffe04540   # Read operation (Load) at address 0xffe04540
 w 0eff2340   # Write operation (Store) at address 0x0eff2340
 ### Performance Tracking & Metrics
-Every simulation execution evaluates structural health by outputing a detailed performance breakdown, including:Total layer reads, writes, and dirty block writebacks.Exact miss counters isolated against prefetch-buffer interventions.Standard Miss Rates (MRL1 and MRL2).Total Memory Traffic: A strict calculation summing physical transfers traversing the main memory controller bus boundary.
-### Project Structure
-├── Makefile             # Native build script producing the 'sim' binary   
-├── src/                 # Source directory containing implementation logic   
-│   ├── main.[cpp]  # Arguments parsing, file streaming, and simulation loop   
-│   ├── cache.[h/cpp]    # Generic Cache Layer Module (LRU, WBWA tracking)  
-│   └── prefetch.[h/cpp] # Circular Stream Buffer prefetch unit controller  
-└── traces/              # Sample benchmark simulation traces (if permissible to upload)  
+Every simulation execution evaluates structural health by outputing a detailed performance breakdown, including:
+- Total layer reads, writes, and dirty block writebacks.
+- Exact miss counters isolated against prefetch-buffer interventions.
+- Standard Miss Rates (MRL1 and MRL2).
+- Total Memory Traffic: A strict calculation summing physical transfers traversing the main memory controller bus boundary.
