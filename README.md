@@ -25,7 +25,7 @@ The simulator is architected to dynamically resolve and model multiple custom st
 
 ### Prerequisites
 - A standard Linux/Unix environment or terminal.
-- GCC/G++ Compiler with support for standard build tools (or Java Development Kit if Java based).
+- GCC/G++ Compiler with support for standard build tools.
 
 ### Installation & Compilation
 The repository includes a strict optimization-enabled `Makefile`. To build the standalone executable (named `sim`):
