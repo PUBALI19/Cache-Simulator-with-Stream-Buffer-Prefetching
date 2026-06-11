@@ -63,8 +63,10 @@ To simulate a system with a 32-byte block size, an 8KB 4-way L1 cache, a 256KB 8
 ```
 ### Memory Trace Format
 The simulator reads text traces logging real-time processor memory references. Address fields are processed as 32-bit hexadecimal unsigned integers matching the structural standard:
+```bash
 r ffe04540   # Read operation (Load) at address 0xffe04540
 w 0eff2340   # Write operation (Store) at address 0x0eff2340
+```
 ### Performance Tracking & Metrics
 Every simulation execution evaluates structural health by outputing a detailed performance breakdown, including:
 - Total layer reads, writes, and dirty block writebacks.
